@@ -2,14 +2,69 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Velocity Dash | Home</title>
+    <title>Velocity Dash | Galaxy Edition</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            /* Galaxy Gradient */
+            background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%);
+            color: white;
+            font-family: 'Segoe UI', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            overflow: hidden;
+        }
+        .container {
+            text-align: center;
+            background: rgba(0, 0, 0, 0.6);
+            padding: 40px;
+            border-radius: 20px;
+            border: 1px solid #444;
+            backdrop-filter: blur(10px);
+            z-index: 10;
+        }
+        h1 { font-size: 3rem; margin-bottom: 10px; color: #00f2ff; text-shadow: 0 0 15px #00f2ff; }
+        .instructions { margin-bottom: 30px; line-height: 1.6; }
+        
+        /* The Play Button */
+        .play-button {
+            background: linear-gradient(45deg, #ff0055, #7000ff);
+            color: white;
+            padding: 15px 35px;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 50px;
+            box-shadow: 0 0 20px rgba(255, 0, 85, 0.5);
+            transition: 0.3s;
+            display: inline-block;
+        }
+        .play-button:hover { transform: scale(1.1); box-shadow: 0 0 40px #ff0055; }
+
+        /* Star Background Effect */
+        #stars {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: transparent url('https://www.transparenttextures.com/patterns/stardust.png') repeat;
+            opacity: 0.5;
+        }
+    </style>
 </head>
 <body>
+    <div id="stars"></div>
     <div class="container">
         <h1>VELOCITY DASH</h1>
-        <p>Avoid the blocks. Don't slow down. Survive.</p>
-        <a href="game.html" class="play-button">START DASHING</a>
+        <div class="instructions">
+            <h3>HOW TO PLAY</h3>
+            <p>1. Press <strong>SPACEBAR</strong> to jump over obstacles.</p>
+            <p>2. The longer you survive, the <strong>faster</strong> you dash!</p>
+            <p>3. If you hit a pink spike, it's game over.</p>
+            <p><em>Goal: Reach the highest score in the galaxy!</em></p>
+        </div>
+        <a href="game.html" class="play-button">LAUNCH MISSION</a>
     </div>
 </body>
 </html>
