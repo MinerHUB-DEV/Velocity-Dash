@@ -3,7 +3,7 @@
 **Velocity Dash** is a high-speed, browser-based action game where every millisecond counts. Dodge obstacles, maintain your momentum, and see how long you can survive the dash!
 
 ## 🕹️ Play Now
-Live Demo: [**Click here to play Velocity Dash**](https://yourusername.github.io/velocity-dash/)
+Most Recent Version: [**Click here to play Velocity Dash**](https://yourusername.github.io/velocity-dash/)
 
 ---
 
