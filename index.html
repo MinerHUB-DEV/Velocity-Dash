@@ -5,124 +5,92 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Velocity Dash | Mission Control</title>
     <style>
-        /* Galaxy Theme Styling */
+        /* This CSS is now INSIDE the HTML file so it can't fail */
         body, html {
             margin: 0;
             padding: 0;
             width: 100%;
             height: 100%;
-            background: #020205;
+            background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%);
             color: #ffffff;
-            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            font-family: 'Segoe UI', sans-serif;
             overflow: hidden;
             display: flex;
             justify-content: center;
             align-items: center;
         }
 
-        /* Animated Star Background */
-        .stars-container {
-            position: absolute;
-            top: 0; left: 0; width: 100%; height: 100%;
-            background: radial-gradient(circle at center, #1b2735 0%, #090a0f 100%);
-            z-index: -1;
-        }
-
         .content-box {
             text-align: center;
-            background: rgba(255, 255, 255, 0.05);
+            background: rgba(0, 0, 0, 0.8);
             padding: 50px;
-            border-radius: 30px;
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(15px);
-            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
-            max-width: 500px;
+            border-radius: 20px;
+            border: 2px solid #00f2ff;
+            box-shadow: 0 0 30px rgba(0, 242, 255, 0.3);
+            max-width: 450px;
+            backdrop-filter: blur(10px);
         }
 
         h1 {
-            font-size: 3.5rem;
+            font-size: 3rem;
             margin: 0;
-            background: linear-gradient(to right, #00f2ff, #7000ff);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            letter-spacing: 2px;
-            filter: drop-shadow(0 0 10px rgba(0, 242, 255, 0.5));
+            color: #00f2ff;
+            text-shadow: 0 0 20px #00f2ff;
+            letter-spacing: 5px;
         }
 
         .tagline {
-            color: #aaa;
-            font-size: 1.1rem;
-            margin-bottom: 30px;
-            text-transform: uppercase;
-            letter-spacing: 3px;
+            color: #ff0055;
+            font-weight: bold;
+            letter-spacing: 2px;
+            margin-bottom: 20px;
         }
 
         .instructions {
             text-align: left;
-            background: rgba(0, 0, 0, 0.3);
-            padding: 20px;
-            border-radius: 15px;
-            margin-bottom: 40px;
-        }
-
-        .instructions h3 {
-            margin-top: 0;
-            color: #00f2ff;
             font-size: 0.9rem;
-            text-transform: uppercase;
-        }
-
-        .instructions p {
-            font-size: 0.95rem;
             line-height: 1.6;
-            margin: 10px 0;
-            color: #ddd;
+            margin: 20px 0;
+            padding: 15px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 10px;
         }
 
         .play-button {
             display: inline-block;
-            padding: 18px 45px;
-            background: #ffffff;
-            color: #000;
+            margin-top: 20px;
+            padding: 20px 50px;
+            background: #ff0055;
+            color: white;
             text-decoration: none;
             font-weight: bold;
-            font-size: 1.2rem;
+            font-size: 1.5rem;
             border-radius: 50px;
-            transition: all 0.3s ease;
-            box-shadow: 0 10px 20px rgba(255, 255, 255, 0.2);
+            box-shadow: 0 0 20px #ff0055;
+            transition: 0.3s;
         }
 
         .play-button:hover {
-            transform: translateY(-5px) scale(1.05);
-            background: #00f2ff;
-            box-shadow: 0 0 30px #00f2ff;
-        }
-
-        footer {
-            margin-top: 30px;
-            font-size: 0.8rem;
-            color: #555;
+            transform: scale(1.1);
+            box-shadow: 0 0 40px #ff0055;
+            background: #ff3377;
         }
     </style>
 </head>
 <body>
 
-    <div class="stars-container"></div>
-
     <div class="content-box">
         <h1>VELOCITY DASH</h1>
-        <div class="tagline">Deep Space Survival</div>
+        <div class="tagline">GALAXY EDITION</div>
 
         <div class="instructions">
-            <h3>Mission Briefing</h3>
-            <p>🚀 <b>Objective:</b> Navigate your dash-module through the asteroid field.</p>
-            <p>⌨️ <b>Controls:</b> Tap <b>SPACEBAR</b> to initiate jump thrusters.</p>
-            <p>⚠️ <b>Danger:</b> Velocity increases over time. Avoid all red energy spikes.</p>
+            <strong>SYSTEM REQUIREMENTS:</strong><br>
+            🚀 Goal: Dash as far as possible.<br>
+            ⌨️ Control: Press <b>SPACE</b> to Jump.<br>
+            ⚠️ Alert: Speed increases every 10 points!
         </div>
 
-        <a href="game.html" class="play-button">LAUNCH GAME</a>
-
-        <footer>Project Velocity Dash v1.0</footer>
+        <a href="game.html" class="play-button">LAUNCH MISSION</a>
     </div>
 
 </body>
