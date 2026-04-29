@@ -27,4 +27,4 @@ The goal is simple: **Don't stop moving.** Navigate through a series of increasi
 * `script.js` - The engine behind the velocity.
 
 ---
-Created with ⚡ by [Your Name]
+Created with ⚡ by Cayden
